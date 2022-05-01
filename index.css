@@ -1,15 +1,17 @@
-
-.a {
-    margin-top: 17vh;
-
+body{
+  text-align: center;
 }
+p {
+margin-bottom: 5%;
+}
+
     .container {
       font-size: 9vh;
       width: 0%;
       display: flex;
       flex-wrap: wrap;
   flex-direction: column;
-  margin-left: 30vw;
+  margin-left: 35%;
 
   
     }
@@ -20,6 +22,7 @@
     display: flex;
      justify-content: center;
   align-items: center;
+  
   height: 10vw;
   width: 10vw;
   background: rgb(171, 166, 211);
