@@ -1,0 +1,29 @@
+
+.a {
+    margin-top: 17vh;
+
+}
+    .container {
+      font-size: 9vh;
+      width: 0%;
+      display: flex;
+      flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 30vw;
+
+  
+    }
+      div{
+        border-color: rgb(72, 97, 134);
+    border-width: 1px;
+    border-style:solid; 
+    display: flex;
+     justify-content: center;
+  align-items: center;
+  height: 10vw;
+  width: 10vw;
+  background: rgb(171, 166, 211);
+
+    
+     
+
