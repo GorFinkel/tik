@@ -1,6 +1,5 @@
 
 let dBox=document.querySelectorAll(".d");
-// let server =' http://localhost:3000/posts/'; not activated
 let playerOne = prompt(`Player 1 (X) what is Your name?`,"Mike");
 let playerTwo = prompt ('Player 2 (O) what is Your name?',"Jake");
 let x= "X"
@@ -185,63 +184,4 @@ function restartGame (){
     }
 
 
-
-// more complicated version
-// let clickTimes = 1;
-//  if (clickTimes % 2 !== 0 && box!=="O"&& box!=="X" ){
-//     a.target.textContent ="X";
-//     turnMsg = turnTwo;
-//     updateScreen()
-// clickTimes++
-// console.log(clickTimes)
-
-// } else if (clickTimes % 2 == 0 && box!=="X"&& box!=="O" )  {
-//     a.target.textContent ="O";
-//     turnMsg = turnOne;
-//     updateScreen()
-
-
-
-
-
-
-
-  
-//not activeted yet
-// fetch(server, {
-//     method: 'POST',
-//     body: JSON.stringify({
-//       userId: user_id,
-//       title: new_title,
-//       body: new_body
-//     }),
-//     headers: {
-//       "Content-type": "application/json; charset=UTF-8"
-//     }
-//   })
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log('response: ' + JSON.stringify(data));
-//   })
-
-
-
-// // get data from json file and transform it to an object
-
-// let object ='';
-
-
-// document.getElementById('getMessage').onclick= () => {
-// fetch(server)
-// .then(response => response.json())
-// .then(data => {
-//   object = JSON.stringify(data);
-// object=JSON.parse(object)
-// document.getElementById('message').innerHTML = object[0].title+' '+object[5].body
-
-// console.log(object[0].title)
-
-// })
-
-// };
 
