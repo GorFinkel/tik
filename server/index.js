@@ -60,14 +60,15 @@ game ()
 
 
 function play (item) {
-let box = item.target.id
+const box = item.target.textContent
+let fox = item.target.id
 if (
     turnMsg==turnOne && 
     box!==x && 
     box!==o ){
     turnMsg = turnTwo;
     
-    obj[box]='X'
+    obj[fox]='X'
 
     updateScreen()
     testWinCondition (x,winOneMsg)
@@ -77,7 +78,7 @@ if (
     box!==x &&
     box!==o )  {
     turnMsg = turnOne;
-    obj[box]='O'
+    obj[fox]='O'
     updateScreen()
     testWinCondition (o,winTwoMsg)
 
