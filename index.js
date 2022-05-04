@@ -1,11 +1,12 @@
 
 let dBox=document.querySelectorAll(".d");
+// let server =' http://localhost:3000/posts/'; not activated
 let playerOne = prompt(`Player 1 (X) what is Your name?`,"Mike");
 let playerTwo = prompt ('Player 2 (O) what is Your name?',"Jake");
 let x= "X"
 let o="O"
-let turnOne=`Now is the ${playerOne} (X) turn`;
-let turnTwo=`Now is the ${playerTwo} (O) turn`;
+let turnOne=`Now is the ${playerOne}'s (X) turn`;
+let turnTwo=`Now is the ${playerTwo}'s (O) turn`;
 let turnMsg = turnOne;
 let winOneMsg=`${playerOne} (X) has won!`
 let winTwoMsg=`${playerTwo} (O) has won!`
@@ -48,6 +49,7 @@ if (
     turnMsg = turnTwo;
     updateScreen()
     testWinCondition (x,winOneMsg)
+    console.log(item.target.id)
 
 } else if (
     turnMsg==turnTwo &&
@@ -177,11 +179,89 @@ function restartGame (){
         })
     }
     refresh ()
-    updateScreen()
     continueBtn.remove(continueBtn)
     }
  )
     }
 
+    function restart (){ //restart button
+        let continueBtn = document.getElementById('continueBtn')
+        const refresh = function (){
+            dBox.forEach((boxEach) => {
+            boxEach.textContent='';
+            })
+        }
+        refresh ()
+      document.getElementById('winLog').innerText=''
+      turnMsg = turnOne;
+      updateScreen()
+      winTimesOne =0 ;
+      winTimesTwo = 0;
+      gameTimes=0;
+      continueBtn=document.getElementById('continueBtn')
+      if ( continueBtn){
+      continueBtn.remove(continueBtn)
+  }
+  }
 
+
+
+// more complicated version
+// let clickTimes = 1;
+//  if (clickTimes % 2 !== 0 && box!=="O"&& box!=="X" ){
+//     a.target.textContent ="X";
+//     turnMsg = turnTwo;
+//     updateScreen()
+// clickTimes++
+// console.log(clickTimes)
+
+// } else if (clickTimes % 2 == 0 && box!=="X"&& box!=="O" )  {
+//     a.target.textContent ="O";
+//     turnMsg = turnOne;
+//     updateScreen()
+
+
+
+
+
+
+
+  
+//not activeted yet
+// fetch(server, {
+//     method: 'POST',
+//     body: JSON.stringify({
+//       userId: user_id,
+//       title: new_title,
+//       body: new_body
+//     }),
+//     headers: {
+//       "Content-type": "application/json; charset=UTF-8"
+//     }
+//   })
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log('response: ' + JSON.stringify(data));
+//   })
+
+
+
+// // get data from json file and transform it to an object
+
+// let object ='';
+
+
+// document.getElementById('getMessage').onclick= () => {
+// fetch(server)
+// .then(response => response.json())
+// .then(data => {
+//   object = JSON.stringify(data);
+// object=JSON.parse(object)
+// document.getElementById('message').innerHTML = object[0].title+' '+object[5].body
+
+// console.log(object[0].title)
+
+// })
+
+// };
 
