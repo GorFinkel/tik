@@ -2,4 +2,8 @@
 ticTakToe
 
 
-Tic Tac Toe multiplayer function and then online function
+Tic Tac Toe multiplayer version
+
+Online version is in the **server** folder
+
+
