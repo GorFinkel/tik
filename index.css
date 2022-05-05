@@ -1,17 +1,20 @@
 body{
+  background-color: rgb(163, 255, 255);
   text-align: center;
 }
 p {
+  font-size: 3vh;
 margin-bottom: 5%;
+margin:9px;
 }
 
     .container {
       font-size: 9vh;
       width: 0%;
-      display: flex;
-      flex-wrap: wrap;
-  flex-direction: column;
-  margin-left: 35%;
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows:1fr 1fr 1fr;
+  margin-left: 50%;
 
   
     }
@@ -19,9 +22,9 @@ margin-bottom: 5%;
         border-color: rgb(72, 97, 134);
     border-width: 1px;
     border-style:solid; 
-    display: flex;
-     justify-content: center;
-  align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
   
   height: 10vw;
   width: 10vw;
